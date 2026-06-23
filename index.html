@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Assignment Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>College Assignment Tracker</h1>
+
+<div class="cards">
+<div>Total <span id="total">0</span></div>
+<div>Submitted <span id="sub">0</span></div>
+<div>Pending <span id="pen">0</span></div>
+<div>Late <span id="late">0</span></div>
+</div>
+
+<input id="title" placeholder="Assignment Title">
+<input id="subject" placeholder="Subject">
+
+<select id="status">
+<option>Submitted</option>
+<option>Pending</option>
+<option>Late</option>
+</select>
+
+<button onclick="addTask()">Add</button>
+
+<table>
+<thead>
+<tr>
+<th>Title</th><th>Subject</th><th>Status</th>
+</tr>
+</thead>
+<tbody id="list"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
